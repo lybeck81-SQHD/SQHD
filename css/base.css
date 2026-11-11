@@ -1,0 +1,23 @@
+h1, h2, h3{
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headerLogoText{
+    text-transform: uppercase;
+    font-size: clamp(2rem, 5vw, 6rem);
+    display: none;
+}
