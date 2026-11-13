@@ -1,22 +1,250 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" type="image/x-icon" href="assets/logo/square-head-logo.svg">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111111">
+    <meta name="description" content="Squarehead is a creative streetwear and lifestyle brand. Born outside the box.">
+    <link rel="icon" href="assets/logo/square-head-logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
-    <title>SQUAREHEAD</title>
-</head>
-<body>
-    <div class="hero">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>SQUAREHEAD — Born outside the box</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Squarehead home">
+        <img class="head-mark__logo" src="assets/logo/square-head-logo.svg" alt="" aria-hidden="true">
+        <h1 class="wordmark__heading">SQUAREHEAD</h1>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#stories">Stories</a>
+        <a href="#drop">The drop</a>
+        <a href="#custom">Custom</a>
+        <a href="#community">Community</a>
+        <a href="brandGuidelines.html">Brand portal</a>
+      </nav>
+      <a class="header-cta" href="#drop">Shop the drop <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Independent by nature · Est. for the curious</p>
+          <h2 id="hero-title">Born outside<br>the <span>box.</span></h2>
+          <p class="hero-intro">People. Ideas. Places. Music. Art. Culture.<br>Always a little different.</p>
+          <div class="hero-actions">
+            <a class="button button--dark" href="#drop">Shop the drop <span aria-hidden="true">↗</span></a>
+            <a class="button button--outline" href="#custom">Make your thing <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-note">Same shape.<br><span>Many stories.</span></p>
+          <div class="hero-index" aria-hidden="true"><span>01</span> / 06</div>
+        </div>
+        <div class="hero-art">
           <img
-        class="logo"
-        src="assets/logo/logotype.svg"
-        alt="Square Head">
-        <h1 class="headerLogoText">SQUAREHEAD</h1>
-    </div>
-</body>
+            src="assets/images/SQHD-Billboard.png"
+            alt="Squarehead artwork out in the city"
+            fetchpriority="high"
+          >
+          <span class="hero-art__stamp">Made for<br>the outside</span>
+          <span class="hero-art__caption">Good ideas still count. — SQHD</span>
+          <span class="hero-art__number" aria-hidden="true">SH—001</span>
+        </div>
+        <div class="hero-bottom">
+          <span>Creativity is a contact sport.</span>
+          <a href="#stories">Scroll to explore <span aria-hidden="true">↓</span></a>
+          <span>Stockholm · Everywhere</span>
+        </div>
+      </section>
+
+      <section class="stories section-pad" id="stories" aria-labelledby="stories-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / A point of view</p>
+          <h2 id="stories-title">One shape.<br><span>Many stories.</span></h2>
+          <p class="section-intro">A little head for a bigger mind. Made for the people who make their own way through it.</p>
+        </div>
+        <div class="story-grid">
+          <a class="story-card story-card--people" href="#community">
+            <img src="assets/images/moodboard/moodboard-image 1.png" alt="Squarehead street culture moodboard" loading="lazy">
+            <span class="story-card__label">01 — People</span>
+            <span class="story-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="story-card story-card--ideas" href="#custom">
+            <img src="assets/images/art/Humon-Head-square.png" alt="A hand-made Squarehead character artwork" loading="lazy">
+            <span class="story-card__label">02 — Ideas</span>
+            <span class="story-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="story-card story-card--places" href="#community">
+            <img src="assets/images/SQHD-fantasy.png" alt="Squarehead art in an imagined place" loading="lazy">
+            <span class="story-card__label">03 — Places</span>
+            <span class="story-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="story-card story-card--skate" href="#community">
+            <img src="assets/images/moodboard/moodboard-image 2.png" alt="Skate-inspired street scene" loading="lazy">
+            <span class="story-card__label">04 — Skate</span>
+            <span class="story-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="story-card story-card--music" href="#community">
+            <img src="assets/images/moodboard/moodboard-image 3.png" alt="Music and creative culture moodboard" loading="lazy">
+            <span class="story-card__label">05 — Music</span>
+            <span class="story-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="story-card story-card--art" href="#community">
+            <img src="assets/images/art/Skull.png" alt="Squarehead-inspired skull illustration" loading="lazy">
+            <span class="story-card__label">06 — Art</span>
+            <span class="story-card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="hand-note">A small head<br>for a bigger mind <span>↙</span></p>
+      </section>
+
+      <section class="drop section-pad" id="drop" aria-labelledby="drop-title">
+        <div class="drop-heading">
+          <div>
+            <p class="eyebrow">02 / Small batch, big energy</p>
+            <h2 id="drop-title">The latest<br><span>drop.</span></h2>
+          </div>
+          <a class="text-link" href="#custom">See what we can make <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <a class="product-image product-image--hoodie" href="#custom" aria-label="Ask about the Squarehead hoodie">
+              <span class="product-tag">Everyday uniform</span>
+              <img src="assets/images/art/SquareHead i urban streetwear-stil 1.png" alt="Squarehead streetwear character in a hoodie" loading="lazy">
+              <span class="product-quick">View piece <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="product-info"><h3>Outside hoodie</h3><span>Heavyweight · Unisex</span></div>
+          </article>
+          <article class="product-card">
+            <a class="product-image product-image--tee" href="#custom" aria-label="Ask about the Squarehead logo tee">
+              <span class="product-tag">The original</span>
+              <img src="assets/images/moodboard/moodboard-image 6.png" alt="Squarehead graphic tee inspiration" loading="lazy">
+              <span class="product-quick">View piece <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="product-info"><h3>Logo tee</h3><span>Soft cotton · Unisex</span></div>
+          </article>
+          <article class="product-card">
+            <a class="product-image product-image--beanie" href="#custom" aria-label="Ask about the Squarehead beanie">
+              <span class="product-tag">Cold head, warm ideas</span>
+              <img src="assets/images/moodboard/moodboard-image 12.png" alt="Squarehead beanie moodboard inspiration" loading="lazy">
+              <span class="product-quick">View piece <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="product-info"><h3>Square beanie</h3><span>One size · All heads</span></div>
+          </article>
+          <article class="product-card">
+            <a class="product-image product-image--stickers" href="#custom" aria-label="Ask about the Squarehead sticker pack">
+              <span class="product-tag">Good ideas stick</span>
+              <img src="assets/images/SQHD-motoStickers.png" alt="Squarehead stickers made to travel" loading="lazy">
+              <span class="product-quick">View piece <span aria-hidden="true">↗</span></span>
+            </a>
+            <div class="product-info"><h3>Sticker pack</h3><span>Five designs · Stick anywhere</span></div>
+          </article>
+        </div>
+        <p class="drop-footnote"><span aria-hidden="true">✳</span> Made when ordered. No dusty leftovers.</p>
+      </section>
+
+      <section class="made-order" aria-labelledby="made-title">
+        <div class="made-order__art">
+          <img src="assets/images/moodboard/moodboard-image 14.png" alt="A work-in-progress from the Squarehead studio" loading="lazy">
+          <span class="made-order__caption">Less waste. More weird stuff.</span>
+        </div>
+        <div class="made-order__copy">
+          <p class="eyebrow">03 / Better by design</p>
+          <h2 id="made-title">Made when<br>ordered<span>.</span></h2>
+          <p>No warehouses. No waste. More room for ideas. We make each piece when it finds its person — so we can keep doing things our own way.</p>
+          <a class="text-link text-link--light" href="#drop">Get to know the drop <span aria-hidden="true">↗</span></a>
+          <span class="made-order__scribble" aria-hidden="true">Less stuff.<br>More stories.</span>
+        </div>
+      </section>
+
+      <section class="custom section-pad" id="custom" aria-labelledby="custom-title">
+        <div class="custom-art">
+          <img src="assets/images/SQHD-tesla.png" alt="Squarehead artwork printed on a real-world surface" loading="lazy">
+          <span class="custom-art__label">Your idea<br>goes here.</span>
+        </div>
+        <div class="custom-copy">
+          <p class="eyebrow">04 / Your thing, made real</p>
+          <h2 id="custom-title">Custom<br><span>print.</span></h2>
+          <p>Have an idea? We print it. From a few good stickers to merch for the whole crew, let's make something that feels like you.</p>
+          <ul class="custom-list" aria-label="Custom print possibilities">
+            <li>Merch &amp; small runs</li>
+            <li>Artists &amp; brands</li>
+            <li>Events &amp; crews</li>
+            <li>Stickers &amp; more</li>
+          </ul>
+          <a class="button button--sand" href="#contact">Get a quote <span aria-hidden="true">↗</span></a>
+          <span class="custom-scribble" aria-hidden="true">Ideas into<br>real things.</span>
+        </div>
+      </section>
+
+      <section class="community section-pad" id="community" aria-labelledby="community-title">
+        <div class="community-heading">
+          <div>
+            <p class="eyebrow">05 / Out in the world</p>
+            <h2 id="community-title">Outside<br><span>the feed.</span></h2>
+          </div>
+          <div class="community-aside">
+            <p>Real people. Real places.<br>Tag your world <span>@squarehead</span></p>
+            <a href="https://www.instagram.com/" aria-label="Visit Instagram" target="_blank" rel="noreferrer">Follow along <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="community-grid">
+          <a href="assets/images/SQHD-motoStickers.png" target="_blank" rel="noreferrer" aria-label="View Squarehead sticker art">
+            <img src="assets/images/SQHD-motoStickers.png" alt="Squarehead stickers out in the world" loading="lazy"><span>Stick around</span>
+          </a>
+          <a href="assets/images/art/Human-head-pportrait.png" target="_blank" rel="noreferrer" aria-label="View Squarehead portrait artwork">
+            <img src="assets/images/art/Human-head-pportrait.png" alt="A Squarehead portrait illustration" loading="lazy"><span>Make a mark</span>
+          </a>
+          <a href="assets/images/SQHD-Billboard.png" target="_blank" rel="noreferrer" aria-label="View Squarehead billboard artwork">
+            <img src="assets/images/SQHD-Billboard.png" alt="Squarehead billboard in the city" loading="lazy"><span>Find your place</span>
+          </a>
+          <a href="assets/images/art/Skull.png" target="_blank" rel="noreferrer" aria-label="View Squarehead illustration">
+            <img src="assets/images/art/Skull.png" alt="An original Squarehead illustration" loading="lazy"><span>Draw outside</span>
+          </a>
+          <a href="assets/images/moodboard/moodboard-image 14.png" target="_blank" rel="noreferrer" aria-label="View Squarehead creative process">
+            <img src="assets/images/moodboard/moodboard-image 14.png" alt="A peek into the Squarehead creative process" loading="lazy"><span>In the making</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="wordmark wordmark--light" href="#top" aria-label="Squarehead home">
+            <span class="head-mark" aria-hidden="true"><i></i><i></i></span>
+            <span>SQUAREHEAD</span>
+          </a>
+          <p>One shape.<br>Many stories.</p>
+        </div>
+        <div class="footer-links">
+          <span class="eyebrow">Find your way</span>
+          <a href="#stories">The stories</a>
+          <a href="#drop">The drop</a>
+          <a href="#custom">Custom print</a>
+        </div>
+        <div class="footer-links">
+          <span class="eyebrow">Stay in the loop</span>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok ↗</a>
+          <a href="#community">The community ↗</a>
+        </div>
+        <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> SQUAREHEAD. All stories reserved.</span>
+        <span>Born outside the box — Stockholm, everywhere.</span>
+        <span>Made for the curious <span aria-hidden="true">✳</span></span>
+      </div>
+    </footer>
+  </body>
 </html>

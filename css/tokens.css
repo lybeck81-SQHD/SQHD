@@ -1,0 +1,18 @@
+:root {
+  --black: #111111;
+  --white: #f4f4f2;
+  --olive: #4a563b;
+  --sand: #d7c9b1;
+  --blue: #6b7f9e;
+  --rust: #8b3f36;
+
+  --ink: var(--black);
+  --paper: var(--white);
+
+  --display: "Anton", Impact, sans-serif;
+  --body: "Inter", Arial, sans-serif;
+  --marker: "Permanent Marker", cursive;
+  --rock: "Rock Salt", cursive;
+  --archivo: "Archivo Black", sans-serif;
+  --caveat: "Caveat", cursive;
+}

@@ -1,11 +1,4 @@
 :root {
-    --black: #111111;
-    --white: #F4F4F2;
-    --olive: #4A563B;
-    --sand: #D7C9B1;
-    --blue: #6B7F9E;
-    --rust: #8B3F36;
-
     --container: 1600px;
 }
 
@@ -20,7 +13,7 @@
 body {
     background: var(--white);
     color: var(--black);
-    font-family: "Inter", sans-serif;
+    font-family: var(--body);
     line-height: 1.4;
 }
 
@@ -41,7 +34,7 @@ section {
 h1,
 h2,
 h3 {
-    font-family: "Anton", sans-serif;
+    font-family: var(--display);
     text-transform: uppercase;
     font-weight: 400;
     line-height: .95;
@@ -131,7 +124,7 @@ svg path {
 
 .hero-message h3 {
     margin: 4rem 0;
-    font-family: "Permanent Marker", cursive;
+    font-family: var(--marker);
     font-size: clamp(2rem, 4vw, 4rem);
 }
 
@@ -183,27 +176,27 @@ svg path {
 }
 
 .anton {
-    font-family: "Anton", sans-serif;
+    font-family: var(--display);
     font-size: clamp(3rem, 6vw, 6rem);
 }
 
 .marker {
-    font-family: "Permanent Marker", cursive;
+    font-family: var(--marker);
     font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .rock {
-    font-family: "Rock Salt", cursive;
+    font-family: var(--rock);
     font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
 .archivo {
-    font-family: "Archivo Black", sans-serif;
+    font-family: var(--archivo);
     font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .caveat {
-    font-family: "Caveat", cursive;
+    font-family: var(--caveat);
     font-size: clamp(2rem, 4vw, 4rem);
 }
 
@@ -261,30 +254,30 @@ svg path {
 }
 
 .charcoal {
-    background: #111111;
+    background: var(--black);
     color: white;
 }
 
 .offwhite {
-    background: #F4F4F2;
+    background: var(--white);
 }
 
 .olive {
-    background: #4A563B;
+    background: var(--olive);
     color: white;
 }
 
 .sand {
-    background: #D7C9B1;
+    background: var(--sand);
 }
 
 .blue {
-    background: #6B7F9E;
+    background: var(--blue);
     color: white;
 }
 
 .rust {
-    background: #8B3F36;
+    background: var(--rust);
     color: white;
 }
 
