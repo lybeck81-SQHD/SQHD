@@ -26,7 +26,7 @@ const year = document.querySelector("[data-year]");
 if (year) year.textContent = String(new Date().getFullYear());
 
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .story-card, .drop-heading, .product-card, .made-order__art, .made-order__copy, .custom-art, .custom-copy, .community-heading, .community-grid a",
+  ".section-heading, .story-card, .drop-heading, .product-card, .made-order__art, .made-order__copy, .custom-art, .custom-copy, .diy-heading, .diy-card, .community-heading, .community-grid a",
 );
 
 if ("IntersectionObserver" in window) {
