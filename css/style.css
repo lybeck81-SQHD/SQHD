@@ -1448,8 +1448,14 @@ h3 {
   }
 
   .site-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     min-height: 62px;
     gap: .7rem;
+    border-bottom: 0;
+    background: rgba(244, 244, 242, .88);
   }
 
   .wordmark {
@@ -1480,29 +1486,37 @@ h3 {
     font-size: .53rem;
   }
 
+  .site-header > .header-cta {
+    display: none;
+  }
+
   .hero {
+    min-height: 100svh;
     grid-template-columns: 1fr;
-    padding-top: 3.2rem;
+    grid-template-rows: 1fr;
+    padding: 0;
   }
 
   .hero-copy {
-    padding: 0 0 2rem;
+    position: absolute;
+    right: var(--gutter);
+    bottom: 4.2rem;
+    left: var(--gutter);
+    padding: 0;
   }
 
-  .hero .eyebrow {
-    font-size: .56rem;
-  }
-
-  .hero h1 {
-    font-size: clamp(3.5rem, 10vw, 5.1rem);
-  }
-
+  .hero .eyebrow,
   .hero-intro {
-    margin: 1.4rem 0;
-    font-size: .84rem;
+    display: none;
+  }
+
+  .hero h2 {
+    display: none;
   }
 
   .hero-actions {
+    width: 100%;
+    justify-content: center;
     gap: .55rem;
   }
 
@@ -1513,27 +1527,59 @@ h3 {
     font-size: .59rem;
   }
 
+  .button--outline {
+    border-color: var(--paper);
+    background: rgba(17, 17, 17, .2);
+    color: var(--paper);
+  }
+
   .hero-art {
-    min-height: 340px;
-    margin: 0 .25rem 1.5rem;
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    min-height: 0;
+    margin: 0;
+    transform: none;
   }
 
   .hero-art img {
-    min-height: 340px;
+    min-height: 0;
+    border: 0;
+    filter: saturate(.72) contrast(1.04);
+    object-fit: cover;
+    object-position: center;
   }
 
-  .hero-art__caption {
-    font-size: 2.1rem;
+  .hero-art::after {
+    border: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .05) 45%, rgba(0, 0, 0, .65) 100%);
+  }
+
+  .hero-art__stamp,
+  .hero-art__caption,
+  .hero-art__number {
+    display: none;
   }
 
   .hero-bottom {
-    gap: .8rem;
+    position: absolute;
+    right: var(--gutter);
+    bottom: .7rem;
+    left: var(--gutter);
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    color: var(--paper);
     font-size: .5rem;
     letter-spacing: .06em;
   }
 
-  .hero-bottom span:last-child {
-    text-align: right;
+  .hero-bottom span {
+    display: none;
+  }
+
+  .hero-bottom a {
+    padding: .5rem;
   }
 
   .hero-index {
