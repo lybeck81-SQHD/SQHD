@@ -369,6 +369,7 @@ h3 {
   font-size: clamp(1.5rem, 3vw, 3.2rem);
   line-height: .98;
   text-transform: uppercase;
+  text-shadow: 1px 1px black;
 }
 
 .hero-art__number {
