@@ -339,6 +339,7 @@ h3 {
   min-height: 420px;
   object-fit: cover;
   filter: saturate(.72) contrast(1.04);
+  border: 10px solid white;
 }
 
 .hero-art__stamp,
@@ -555,7 +556,7 @@ h3 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(.75rem, 2vw, 1.5rem);
 }
 
@@ -591,20 +592,12 @@ h3 {
   transform: scale(1.04);
 }
 
-.product-image--hoodie {
+.product-image--overshirt {
   background: #c8c8c1;
 }
 
-.product-image--tee {
-  background: #d8d0c3;
-}
-
-.product-image--beanie {
-  background: #a7ad9c;
-}
-
-.product-image--stickers {
-  background: #c5b6a2;
+.product-image--hoodie {
+  background: #333;
 }
 
 .product-tag {
@@ -620,38 +613,60 @@ h3 {
   text-transform: uppercase;
 }
 
-.product-quick {
+.product-carousel__controls {
   position: absolute;
-  right: 1rem;
   bottom: 1rem;
-  left: 1rem;
+  left: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: .7rem .8rem;
-  background: var(--ink);
-  color: white;
-  font-size: .6rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity .2s ease, transform .2s ease;
+  justify-content: center;
+  gap: .55rem;
+  transform: translateX(-50%);
 }
 
-.product-image:hover .product-quick,
-.product-image:focus-visible .product-quick {
-  opacity: 1;
-  transform: translateY(0);
+.product-carousel__button,
+.product-carousel__count {
+  display: grid;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+.product-carousel__button {
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+.product-carousel__button:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.product-carousel__button:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 3px;
+}
+
+.product-carousel__count {
+  min-width: 3.2rem;
+  padding: 0 .45rem;
+  font-size: .62rem;
+  font-weight: 700;
 }
 
 .product-info {
+  padding-top: .8rem;
+}
+
+.product-info__heading {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: .5rem;
-  padding-top: .8rem;
 }
 
 .product-info h3 {
@@ -661,9 +676,58 @@ h3 {
   text-transform: uppercase;
 }
 
-.product-info span {
-  text-align: right;
-  font-size: .59rem;
+.product-price {
+  flex: 0 0 auto;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.product-description {
+  margin: .35rem 0 0;
+  font-size: .72rem;
+  line-height: 1.5;
+}
+
+.product-techniques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .8rem;
+  margin: .65rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-techniques li {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .61rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.product-techniques svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.product-contact {
+  margin-top: .8rem;
+  font-size: .61rem;
+}
+
+.product-contact:hover {
+  color: var(--rust);
+}
+
+.product-image img[hidden] {
+  display: none;
 }
 
 .drop-footnote {
@@ -1581,30 +1645,40 @@ h3 {
     font-size: .46rem;
   }
 
-  .product-quick {
-    right: .55rem;
-    bottom: .55rem;
-    left: .55rem;
-    padding: .55rem .6rem;
-    font-size: .51rem;
-    opacity: 1;
-    transform: none;
-  }
-
   .product-info {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: .1rem;
     padding-top: .55rem;
   }
 
   .product-info h3 {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
   }
 
-  .product-info span {
-    text-align: left;
-    font-size: .57rem;
+  .product-price {
+    font-size: .68rem;
+  }
+
+  .product-description {
+    font-size: .62rem;
+  }
+
+  .product-techniques {
+    gap: .4rem .55rem;
+    margin-top: .5rem;
+  }
+
+  .product-techniques li {
+    gap: .25rem;
+    font-size: .5rem;
+  }
+
+  .product-techniques svg {
+    width: .85rem;
+    height: .85rem;
+  }
+
+  .product-contact {
+    margin-top: .6rem;
+    font-size: .52rem;
   }
 
   .drop-footnote {

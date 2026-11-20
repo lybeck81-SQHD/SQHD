@@ -25,6 +25,25 @@ if (menuToggle && primaryNav) {
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = String(new Date().getFullYear());
 
+document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
+  const slides = Array.from(carousel.querySelectorAll(":scope > img"));
+  const counter = carousel.querySelector(".product-carousel__count");
+  let activeIndex = 0;
+
+  carousel.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    const button = event.target.closest("[data-carousel-prev], [data-carousel-next]");
+    if (!(button instanceof HTMLButtonElement)) return;
+
+    const direction = button.hasAttribute("data-carousel-next") ? 1 : -1;
+    activeIndex = (activeIndex + direction + slides.length) % slides.length;
+    slides.forEach((slide, index) => {
+      slide.hidden = index !== activeIndex;
+    });
+    if (counter) counter.textContent = `${activeIndex + 1} / ${slides.length}`;
+  });
+});
+
 const revealTargets = document.querySelectorAll(
   ".section-heading, .story-card, .drop-heading, .product-card, .made-order__art, .made-order__copy, .custom-art, .custom-copy, .diy-heading, .diy-card, .community-heading, .community-grid a",
 );
