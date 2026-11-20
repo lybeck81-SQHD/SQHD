@@ -339,7 +339,7 @@ h3 {
   min-height: 420px;
   object-fit: cover;
   filter: saturate(.72) contrast(1.04);
-  border: 10px solid white;
+  border: 10px solid white; /* Add a white border around the image */
 }
 
 .hero-art__stamp,
