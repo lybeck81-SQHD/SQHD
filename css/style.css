@@ -1127,7 +1127,12 @@ h3 {
   min-height: 150px;
   object-fit: cover;
   background: #c9c1b3;
-  filter: saturate(.82);
+  filter: grayscale(1);
+  transition: filter .45s ease;
+}
+
+.diy-card:hover img {
+  filter: grayscale(0);
 }
 
 .diy-card figcaption {
