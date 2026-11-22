@@ -81,8 +81,11 @@ button {
   gap: 1.5rem;
   padding: .8rem var(--gutter);
   border-bottom: 1px solid rgba(17, 17, 17, .12);
-  background: rgba(244, 244, 242, .96);
+  background: rgba(244, 244, 242, .8);
   backdrop-filter: blur(14px);
+  &:hover {
+    background: rgba(244, 244, 242, .9);
+  }
 }
 
 .wordmark, .wordmark__heading {
