@@ -574,6 +574,19 @@ h3 {
   text-transform: uppercase;
 }
 
+.icon-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  vertical-align: -.15em;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
