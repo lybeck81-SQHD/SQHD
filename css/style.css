@@ -83,9 +83,14 @@ button {
   border-bottom: 1px solid rgba(17, 17, 17, .12);
   background: rgba(244, 244, 242, .8);
   backdrop-filter: blur(14px);
+  transition: background-color .6s cubic-bezier(.2, .7, .2, 1);
   &:hover {
-    background: rgba(244, 244, 242, .9);
+    background: rgba(244, 244, 242, .95);
   }
+}
+
+.site-header.is-idle {
+  background: rgba(244, 244, 242, .95);
 }
 
 .wordmark, .wordmark__heading {
@@ -843,11 +848,16 @@ h3 {
   text-transform: uppercase;
 }
 
-.drop-footnote span {
+.drop-footnote .icon-spark {
+  width: 1rem;
+  height: 1rem;
   margin-right: .4rem;
   color: var(--rust);
-  font-size: 1.2rem;
   vertical-align: -.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.8;
 }
 
 .made-order {
@@ -1363,8 +1373,16 @@ h3 {
   text-transform: uppercase;
 }
 
-.footer-bottom span:last-child span {
+.footer-bottom .icon-spark {
+  width: .85rem;
+  height: .85rem;
+  margin-left: .2rem;
   color: var(--sand);
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+  vertical-align: -.12rem;
 }
 
 .js-ready [data-reveal] {
@@ -1582,6 +1600,10 @@ h3 {
     gap: .7rem;
     border-bottom: 0;
     background: rgba(244, 244, 242, .88);
+  }
+
+  .site-header.is-idle {
+    background: rgba(244, 244, 242, .95);
   }
 
   .wordmark {

@@ -25,6 +25,21 @@ if (menuToggle && primaryNav) {
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = String(new Date().getFullYear());
 
+const siteHeader = document.querySelector(".site-header");
+if (siteHeader) {
+  let idleTimer;
+  const resetHeaderIdleTimer = () => {
+    siteHeader.classList.remove("is-idle");
+    window.clearTimeout(idleTimer);
+    idleTimer = window.setTimeout(() => {
+      siteHeader.classList.add("is-idle");
+    }, 5000);
+  };
+
+  resetHeaderIdleTimer();
+  window.addEventListener("scroll", resetHeaderIdleTimer, { passive: true });
+}
+
 document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
   const slides = Array.from(carousel.querySelectorAll(":scope > img"));
   const counter = carousel.querySelector(".product-carousel__count");
