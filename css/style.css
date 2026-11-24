@@ -1402,6 +1402,26 @@ h3 {
   vertical-align: -.12rem;
 }
 
+.footer-credit {
+  display: block;
+  margin-top: .75rem;
+  color: rgba(244, 244, 242, .58);
+  font-size: .58rem;
+}
+
+.footer-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(244, 244, 242, .35);
+  text-underline-offset: .2em;
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+
+.footer-credit a:hover {
+  color: var(--paper);
+  text-decoration-color: currentColor;
+}
+
 .js-ready [data-reveal] {
   opacity: 0;
   transform: translateY(18px);
