@@ -1320,6 +1320,13 @@ h3 {
   color: var(--paper);
 }
 
+.footer-brand__logo {
+  display: block;
+  width: 37px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
 .footer-brand p {
   margin: 1.3rem 0 0;
   font-family: var(--display);

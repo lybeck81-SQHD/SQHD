@@ -346,7 +346,23 @@ svg path {
     margin-bottom: 1rem;
 }
 
+.logo-grid .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-grid .card img {
+    width: 100%;
+    height: clamp(200px, 22vw, 260px);
+    margin: 0 auto 1rem;
+    object-fit: contain;
+}
+
 /* TYPE */
+
+.type-sample {
+    color: var(--rust);
+}
 
 .type-grid {
     display: grid;
