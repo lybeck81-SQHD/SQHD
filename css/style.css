@@ -597,7 +597,7 @@ h3 {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(.75rem, 2vw, 1.5rem);
 }
 
@@ -606,13 +606,19 @@ h3 {
 }
 
 .product-card--teaser {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 1.5rem;
   color: var(--ink);
 }
 
 .product-teaser {
   position: relative;
   display: flex;
-  aspect-ratio: .83;
+  min-height: 260px;
+  aspect-ratio: auto;
   overflow: hidden;
   align-items: flex-start;
   flex-direction: column;
@@ -695,6 +701,10 @@ h3 {
   object-fit: cover;
   filter: sepia(.9);
   transition: transform .45s ease, filter .45s ease;
+}
+
+.product-image img.product-image__print-tshirt-main {
+  object-fit: contain;
 }
 
 .product-image:hover img {
