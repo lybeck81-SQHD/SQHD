@@ -93,6 +93,17 @@ p {
     color: var(--black);
 }
 
+.brand-nav .icon-arrow {
+    width: 1.4rem;
+    height: 1.4rem;
+    max-width: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
 .brand-nav a:hover {
     color: var(--rust);
 }
@@ -135,8 +146,7 @@ p {
     margin-top: 2rem;
     color: white;
 }
-svg{ max-width: 500px}
-svg path {
+.hero-logo svg path {
     fill: white;
 }
 
