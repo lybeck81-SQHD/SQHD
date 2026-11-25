@@ -709,7 +709,7 @@ h3 {
 
 .product-image:hover img {
   transform: scale(1.04);
-  filter: sepia(0);
+  filter: sepia(0.2);
 }
 
 .product-image--overshirt {
