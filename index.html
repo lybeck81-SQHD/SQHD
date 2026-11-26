@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#111111">
-    <meta name="description" content="SQUAREHEAD is an independent Stockholm streetwear brand founded by Kristoffer Lybeck, shaped by DIY culture, art, skate, music and self-expression.">
+    <meta name="description" content="SQUAREHEAD is an independent Stockholm streetwear brand, shaped by DIY culture, art, skate, music and self-expression.">
     <meta name="author" content="Kristoffer Lybeck">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://www.sqhd.se/">
@@ -62,9 +62,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tokens.css?v=20261125">
-    <link rel="stylesheet" href="css/style.css?v=20261125">
-    <script src="js/main.js?v=20261125" defer></script>
+    <link rel="stylesheet" href="css/tokens.css?v=20261126">
+    <link rel="stylesheet" href="css/style.css?v=20261126">
+    <script src="js/main.js?v=20261126" defer></script>
     <title>SQUAREHEAD by Kristoffer Lybeck | Independent Streetwear</title>
   </head>
   <body>
@@ -487,5 +487,23 @@
       </div>
       <small class="footer-credit">An independent brand by <a href="brandGuidelines.html#brand-story" rel="author">Kristoffer Lybeck</a></small>
     </footer>
+
+    <dialog class="product-lightbox" data-product-lightbox aria-labelledby="product-lightbox-title">
+      <div class="product-lightbox__frame">
+        <button class="product-lightbox__close" type="button" data-lightbox-close aria-label="Close enlarged image">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+        </button>
+        <button class="product-lightbox__nav product-lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Show previous image"><svg class="icon-arrow icon-arrow--left" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+        <div class="product-lightbox__viewport">
+          <img class="product-lightbox__image" data-lightbox-image src="" alt="">
+        </div>
+        <button class="product-lightbox__nav product-lightbox__nav--next" type="button" data-lightbox-next aria-label="Show next image"><svg class="icon-arrow icon-arrow--right" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7"/></svg></button>
+        <div class="product-lightbox__footer">
+          <span class="product-lightbox__count" data-lightbox-count aria-live="polite"></span>
+          <button class="product-lightbox__zoom" type="button" data-lightbox-zoom aria-label="Toggle image zoom" aria-pressed="false">Zoom</button>
+          <p class="product-lightbox__caption" id="product-lightbox-title" data-lightbox-caption></p>
+        </div>
+      </div>
+    </dialog>
   </body>
 </html>
