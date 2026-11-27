@@ -904,6 +904,7 @@ h3 {
   transform: scale(1);
   transition: transform .25s ease;
   user-select: none;
+  filter:sepia(.3)
 }
 
 .product-lightbox__image.is-zoomed {

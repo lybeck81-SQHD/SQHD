@@ -54,6 +54,8 @@ document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
     if (counter) counter.textContent = `${activeIndex + 1} / ${slides.length}`;
   };
 
+  showSlide(0);
+
   carousel.addEventListener("click", (event) => {
     if (!(event.target instanceof Element)) return;
     const button = event.target.closest("[data-carousel-prev], [data-carousel-next]");
